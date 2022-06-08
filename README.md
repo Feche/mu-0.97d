@@ -1,4 +1,4 @@
 # mu-0.97d
-Various bug fixes for MuOnline 0.97d gameserver.
+Various bug fixes/enhancements for MuOnline 0.97d gameserver.
 
-C++ & Assembler, IDA Hexrays Pro to reverse engenieer and get memory addresses.
+C++ & Assembler, IDA Hexrays Pro to reverse engenieer.
