@@ -2,6 +2,7 @@
 
 // Find free slot on player inventory matching
 // The width and heigh of the item
+// Uses ITEM structure
 BYTE CCFindFreeInventorySlot(BYTE width, BYTE height)
 {
 	ITEM* Inventory = g_pMyInventory;
