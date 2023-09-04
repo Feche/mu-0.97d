@@ -1,0 +1,1 @@
+BYTE CCFindFreeInventorySlot(BYTE width, BYTE height);
