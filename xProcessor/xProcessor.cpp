@@ -113,7 +113,7 @@ bool isNumber(char* num)
 	return false;
 }
 
-char* xProcessor::GetTokenStr(bool RestoreIndex, bool IncludeSpaces)
+char* xProcessor::GetTokenStr(bool IncludeSpaces, bool RestoreIndex)
 {
 	xCCMD* cmd = GetActiveCommand();
 
@@ -264,7 +264,7 @@ void xProcessor::SetActiveCommand(xCCMD* cmd)
 
 bool xProcessor::HasArguments()
 {
-	if (Cmd.GetTokenInt(true) == INVALID_INT && Cmd.GetTokenStr(true) == INVALID_STR)
+	if (Cmd.GetTokenInt(true) == INVALID_INT && Cmd.GetTokenStr(true, true) == INVALID_STR)
 	{
 		return false;
 	}
@@ -272,9 +272,9 @@ bool xProcessor::HasArguments()
 	return true;
 }
 
-bool xProcessor::IsFirstArgumentInt()
+bool xProcessor::IsFirstArgumentStr()
 {
-	if (Cmd.GetTokenInt(true) != INVALID_INT)
+	if (Cmd.GetTokenStr(true, true) != INVALID_STR)
 	{
 		return true;
 	}

@@ -47,7 +47,7 @@ public:
 	bool	Process(const char* Input);
 	bool	IsCommand(const char* Id);
 	void	Execute(const char* szCmd);
-	char*	GetTokenStr(bool RestoreIndex = false, bool IncludeSpaces = true);
+	char*	GetTokenStr(bool IncludeSpaces = true, bool RestoreIndex = false);
 	int		GetTokenInt(bool RestoreIndex = false);
 	void	ParseCommand(const char* Input, char* szCmd);
 	bool	HasArguments();
